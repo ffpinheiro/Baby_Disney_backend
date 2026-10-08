@@ -41,14 +41,13 @@
 
 | Seção                      | Conteúdo                                                                                                                                                                                                                           | Dupla |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
-| Introdução                 | "Apresenta o tema, justificativa, objetivos (geral e específicos) e escopo do estudo, contextualizando o problema."<br>*Explicar sobre os tipos de criptografia (cifra de César, subtituição, transposição)*                       |       |
-| Revisão Teórica            | "Fundamentação teórica necessária para a compreensão do tema, incluindo conceitos, definições e referências bibliográficas."<br>*Explicar sobre a criptografia escolhida (criptografia que criamos para o projeto)*                | A     |
+| Introdução                 | "Apresenta o tema, justificativa, objetivos (geral e específicos) e escopo do estudo, contextualizando o problema."<br>*Nota: Explicar sobre os tipos de criptografia (cifra de César, subtituição, transposição)*                       |       |
+| Revisão Teórica            | "Fundamentação teórica necessária para a compreensão do tema, incluindo conceitos, definições e referências bibliográficas."<br>*Nota: Explicar sobre a criptografia escolhida (criptografia que criamos para o projeto)*                | A     |
 | Metodologia                | "Descrição dos métodos, ferramentas, materiais e procedimentos adotados."                                                                                                                                                          | B     |
-| Desenvolvimento            | Parte principal do trabalho, contendo:<br>• Descrição do sistema ou projeto;<br>• Diagramas, esquemas e modelagens;<br>• Resultados obtidos e análise crítica.<br>• A codificação completa.<br>*Subcapítulo de resultados obtidos* |       |
-| Conclusão                  | "Síntese dos resultados, dificuldades, limitações e sugestões para trabalhos futuros."<br>*Resumo das dificuldades enfrentadas e como foram superadas*                                                                             |       |
+| Desenvolvimento            | Parte principal do trabalho, contendo:<br>• Descrição do sistema ou projeto;<br>• Diagramas, esquemas e modelagens;<br>• Resultados obtidos e análise crítica.<br>• A codificação completa.<br>*Nota: Subcapítulo de resultados obtidos* |       |
+| Conclusão                  | "Síntese dos resultados, dificuldades, limitações e sugestões para trabalhos futuros."<br>*Nota: Resumo das dificuldades enfrentadas e como foram superadas*                                                                             |       |
 | Referências | "Listagem de obras, artigos, sites e normas técnicas consultados, seguindo normas ABNT."                                                                                                                                           |       |
 | Fichas                     | "Anexo das fichas individualizadas por aluno."                                                                                                                                                                                     |       |
-
 - [ ] Introdução
 - [ ] Revisão Teórica
 - [ ] Metodologia
