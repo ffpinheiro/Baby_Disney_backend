@@ -1,0 +1,68 @@
+# Lista de tarefas por dupla
+
+## Dupla A: Cifra própria (Integrantes 2 e 3)
+
+**Código**
+- [ ] Definir as regras da cifra própria e como a chave funciona e é validada
+- [ ] Acordar com a Dupla B a interface dos módulos de cifra (entradas, saídas e erros) antes de implementar
+- [ ] Implementar a cifra própria, César e Transposição em `criptografia/`, com código comentado
+
+**Texto**
+- [ ] Revisão Teórica (dividida entre os dois, conforme o combinado)
+- [ ] Desenvolvimento do módulo criptográfico: conceito, motivação, regras, chave, criptografia e descriptografia, com fluxograma ou pseudocódigo
+- [ ] Exemplos práticos e limitações da cifra
+- [ ] Reunir as referências da parte teórica
+
+## Dupla B: Sistema e back-end (Integrantes 1 e 4)
+
+**Código**
+- [ ] Criar as rotas e conectar os módulos de `criptografia/`, devolvendo resultado e erros para a tela
+- [ ] Configurar o GitHub (branches, README com instruções de execução) e o `requirements.txt`
+
+**Texto**
+- [ ] Metodologia
+- [ ] Desenvolvimento: arquitetura, estrutura de diretórios e fluxo do sistema, com diagramas (basta citar que a aplicação não persiste dados)
+- [ ] Reunir a codificação completa em anexo
+
+## Dupla C: Interface, testes e qualidade (Integrantes 5 e 6)
+
+**Integrante 5, interface**
+- [ ] Montar o projeto Flask, integrando o HTML em `templates/` e CSS e JS existentes em `static/`
+- [ ] Escrever a seção de interface no Desenvolvimento, com capturas de tela
+
+**Integrante 6, testes**
+- [ ] Montar a estratégia e a tabela de casos de teste (criptografia, descriptografia, mensagens vazias, entradas e chaves inválidas, caracteres não suportados)
+- [ ] Executar os testes, incluindo a integração com o Flask, e salvar os testes automatizados em `testes/`
+
+**Texto da dupla**
+- [ ] Conclusões e Recomendações (primeira versão)
+
+# Trabalho escrito
+
+| Seção                      | Conteúdo                                                                                                                                                                                                                           | Dupla |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| Introdução                 | "Apresenta o tema, justificativa, objetivos (geral e específicos) e escopo do estudo, contextualizando o problema."<br>*Explicar sobre os tipos de criptografia (cifra de César, subtituição, transposição)*                       |       |
+| Revisão Teórica            | "Fundamentação teórica necessária para a compreensão do tema, incluindo conceitos, definições e referências bibliográficas."<br>*Explicar sobre a criptografia escolhida (criptografia que criamos para o projeto)*                | A     |
+| Metodologia                | "Descrição dos métodos, ferramentas, materiais e procedimentos adotados."                                                                                                                                                          | B     |
+| Desenvolvimento            | Parte principal do trabalho, contendo:<br>• Descrição do sistema ou projeto;<br>• Diagramas, esquemas e modelagens;<br>• Resultados obtidos e análise crítica.<br>• A codificação completa.<br>*Subcapítulo de resultados obtidos* |       |
+| Conclusão                  | "Síntese dos resultados, dificuldades, limitações e sugestões para trabalhos futuros."<br>*Resumo das dificuldades enfrentadas e como foram superadas*                                                                             |       |
+| Referências | "Listagem de obras, artigos, sites e normas técnicas consultados, seguindo normas ABNT."                                                                                                                                           |       |
+| Fichas                     | "Anexo das fichas individualizadas por aluno."                                                                                                                                                                                     |       |
+
+- [ ] Introdução
+- [ ] Revisão Teórica
+- [ ] Metodologia
+- [ ] Desenvolvimento
+- [ ] Conclusão
+- [ ] Referências
+
+# Itens sem dono
+
+| Item | Responsável |
+|---|---|
+| Capa, Sumário, formatação ABNT e revisão final | Integrante 5 |
+| Resumo e palavras-chave |  |
+| Referências consolidadas |  |
+| Fichas individuais | Cada integrante |
+| Slides e apresentação |  |
+| Postagem no sistema da UNIP |  |
