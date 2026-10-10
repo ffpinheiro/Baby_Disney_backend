@@ -1,3 +1,52 @@
+# [tutorial](https://github.com/ffpinheiro/Baby_Disney_backend/edit/main/README.md#instala%C3%A7%C3%A3o) <br>
+# [tarefas](https://github.com/ffpinheiro/Baby_Disney_backend/edit/main/README.md#lista-de-tarefas-por-dupla)
+# Sobre o projeto
+
+Aplicação web em Flask que criptografa e descriptografa mensagens usando uma cifra própria. A aplicação não persiste dados.
+
+## Estrutura do projeto
+
+```
+.
+├── app.py              # Aplicação Flask (rotas)
+├── requirements.txt    # Dependências
+├── criptografia/       # Algoritmos de criptografia
+├── static/             # CSS e JS
+├── templates/          # HTML
+└── testes/             # Testes automatizados
+```
+
+## Instalação
+
+1. Instale o [Python 3.10+](https://www.python.org/downloads/). No Windows, marque **"Add Python to PATH"**.
+2. Baixe o projeto (botão **Code → Download ZIP** no GitHub) e extraia, ou use `git clone <URL-DO-REPOSITORIO>`.
+3. Abra o terminal dentro da pasta do projeto (onde está o `app.py`) e rode:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+## Executando
+
+```bash
+python -m flask run --debug
+```
+
+Abra no navegador: **http://127.0.0.1:5000**
+
+Para parar o servidor, pressione `Ctrl + C`.
+
+## Testes
+
+```bash
+python -m pytest testes/
+```
+
+> No Linux e no macOS, use `python3` no lugar de `python`.
+> Se der o erro `externally-managed-environment`, crie um ambiente virtual:
+> `python3 -m venv venv && source venv/bin/activate` e repita o passo 3.
+
+***
 # Lista de tarefas por dupla
 
 ## Dupla A: Cifra própria (Integrantes 2 e 3)
@@ -59,9 +108,9 @@
 
 | Item | Responsável |
 |---|---|
-| Capa, Sumário, formatação ABNT e revisão final | Integrante 5 |
+| Capa, Sumário, formatação ABNT e revisão final |  |
 | Resumo e palavras-chave |  |
 | Referências consolidadas |  |
-| Fichas individuais | Cada integrante |
+| Fichas individuais | Individual |
 | Slides e apresentação |  |
 | Postagem no sistema da UNIP |  |
