@@ -1,5 +1,5 @@
-# [tutorial](https://github.com/ffpinheiro/Baby_Disney_backend/edit/main/README.md#instala%C3%A7%C3%A3o) <br>
-# [tarefas](https://github.com/ffpinheiro/Baby_Disney_backend/edit/main/README.md#lista-de-tarefas-por-dupla)
+# [tutorial](https://github.com/ffpinheiro/Baby_Disney_backend/tree/main#instala%C3%A7%C3%A3o) <br>
+# [tarefas](https://github.com/ffpinheiro/Baby_Disney_backend/tree/main#lista-de-tarefas-por-dupla)
 # Sobre o projeto
 
 Aplicação web em Flask que criptografa e descriptografa mensagens usando uma cifra própria. A aplicação não persiste dados.
