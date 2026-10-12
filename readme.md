@@ -69,7 +69,7 @@ python -m pytest testes/
 - [x] Configurar o GitHub (branches, README com instruções de execução) e o `requirements.txt`
 
 **Texto**
-- [ ] Metodologia
+- [x] Metodologia
 - [ ] Desenvolvimento: arquitetura, estrutura de diretórios e fluxo do sistema, com diagramas (basta citar que a aplicação não persiste dados)
 - [ ] Reunir a codificação completa em anexo
 
@@ -97,11 +97,14 @@ python -m pytest testes/
 | Conclusão                  | "Síntese dos resultados, dificuldades, limitações e sugestões para trabalhos futuros."<br>*Nota: Resumo das dificuldades enfrentadas e como foram superadas*                                                                             | Todos      |
 | Referências | "Listagem de obras, artigos, sites e normas técnicas consultados, seguindo normas ABNT."                                                                                                                                           | Todos      |
 | Fichas                     | "Anexo das fichas individualizadas por aluno."                                                                                                                                                                                     | Individual      |
+- [ ] capa
+- [ ] Resumo
+- [ ] Sumário
 - [ ] Introdução
 - [ ] Revisão Teórica
-- [ ] Metodologia
+- [x] Metodologia
 - [ ] Desenvolvimento
-- [ ] Conclusão
+- [ ] Conclusões e Recomendações
 - [ ] Referências
 
 # Itens sem dono
