@@ -54,7 +54,7 @@ python -m pytest testes/
 **Código**
 - [ ] Definir as regras da cifra própria e como a chave funciona e é validada
 - [ ] Acordar com a Dupla B a interface dos módulos de cifra (entradas, saídas e erros) antes de implementar
-- [ ] Implementar a cifra própria, César e Transposição em `criptografia/`, com código comentado
+- [ ] Implementar a cifra própria em `criptografia/`, com código comentado
 
 **Texto**
 - [ ] Revisão Teórica (dividida entre os dois, conforme o combinado)
