@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com a Escola de Educação Infantil Baby Disney e agende uma visita.">
+    <title>Contato | Escola Baby Disney</title>
+
+    <link rel="stylesheet" href="../static/css/contato.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <div class="topbar">
+        <div class="topbar-container">
+            <p>Um lugar para crescer, aprender e descobrir.</p>
+            <a href="#contato">Fale conosco</a>
+        </div>
+    </div>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="header-container">
+
+            <a href="index.html" class="logo" aria-label="Baby Disney - página inicial">
+                <img src="../static/img/Logo.jpeg" alt="Escola de Educação Infantil Baby Disney">
+            </a>
+
+            <nav class="nav-menu" aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a href="espaco.html">Nosso Espaço</a>
+                <a href="sobre.html">Sobre Nós</a>
+                <a href="agendamento.html">Agendamento</a>
+                <a href="contato.html" class="active" aria-current="page">Contato</a>
+            </nav>
+
+            <a href="agendamento.html" class="header-button">
+                Agende uma visita
+            </a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- SEÇÃO DE CONTATO -->
+        <section class="contact-section" id="contato">
+
+            <div class="section-heading">
+                <span class="section-label">ESTAMOS AQUI PARA VOCÊ</span>
+                <h1>Entre em contato conosco</h1>
+                <p>Será um prazer receber sua família e apresentar nossa escola.</p>
+            </div>
+
+            <div class="contact-grid">
+
+                <!-- INFORMAÇÕES DA ESCOLA -->
+                <div class="contact-info">
+
+                    <div class="info-card">
+                        <div class="info-icon" aria-hidden="true">⌖</div>
+
+                        <div>
+                            <h2>Nosso endereço</h2>
+
+                            <p>
+                                R. Letargino Vaz da Silva, 266<br>
+                                Parque Res. Beira Rio<br>
+                                Guaratinguetá - SP, 12517-370, Brasil
+                            </p>
+
+                            <a class="info-link"
+                               href="https://www.google.com/maps/search/?api=1&amp;query=R.%20Letargino%20Vaz%20da%20Silva%2C%20266%2C%20Guaratinguet%C3%A1%2C%20SP%2C%2012517-370"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Ver no mapa →
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon" aria-hidden="true">◷</div>
+
+                        <div>
+                            <h2>Horários de atendimento</h2>
+
+                            <p>
+                                <strong>Período integral:</strong><br>
+                                8h às 17h
+                            </p>
+
+                            <p>
+                                <strong>Meio período:</strong><br>
+                                13h às 17h
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon" aria-hidden="true">✉</div>
+
+                        <div>
+                            <h2>E-mail</h2>
+
+                            <a href="mailto:Babydisney1999@gmail.com">
+                                Babydisney1999@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon" aria-hidden="true">☎</div>
+
+                        <div>
+                            <h2>Telefone e WhatsApp</h2>
+
+                            <a href="tel:+5512988642417">
+                                (12) 98864-2417
+                            </a>
+
+                            <a class="info-link"
+                               href="https://wa.me/5512988642417"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Conversar pelo WhatsApp →
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- FORMULÁRIO -->
+                <div class="contact-form-container">
+
+                    <h2>Envie uma mensagem</h2>
+
+                    <p class="form-description">
+                        Preencha os campos abaixo. Entraremos em contato assim que possível.
+                    </p>
+
+                    <form action="https://formsubmit.co/Babydisney1999@gmail.com" method="POST">
+
+                        <input type="hidden" name="_subject"
+                               value="Nova mensagem pelo site Baby Disney">
+
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <input type="text" name="_honey"
+                               class="honeypot"
+                               tabindex="-1"
+                               autocomplete="off"
+                               aria-hidden="true">
+
+                        <div class="form-group">
+                            <label for="nome">Nome completo</label>
+
+                            <input
+                                type="text"
+                                id="nome"
+                                name="nome"
+                                placeholder="Digite seu nome"
+                                autocomplete="name"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="seuemail@exemplo.com"
+                                autocomplete="email"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+
+                            <input
+                                type="tel"
+                                id="telefone"
+                                name="telefone"
+                                placeholder="(12) 99999-9999"
+                                autocomplete="tel">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="assunto">Assunto</label>
+
+                            <select id="assunto" name="assunto" required>
+                                <option value="" disabled selected>
+                                    Selecione um assunto
+                                </option>
+
+                                <option value="Matrícula">Matrícula</option>
+                                <option value="Agendamento de visita">Agendamento de visita</option>
+                                <option value="Período integral">Período integral</option>
+                                <option value="Meio período">Meio período</option>
+                                <option value="Outras dúvidas">Outras dúvidas</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Sua mensagem</label>
+
+                            <textarea
+                                id="mensagem"
+                                name="mensagem"
+                                rows="5"
+                                placeholder="Como podemos ajudar?"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="form-button">
+                            Enviar mensagem
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MAPA -->
+        <section class="map-section">
+
+            <div class="map-heading">
+                <span class="section-label">COMO CHEGAR</span>
+                <h2>Encontre nossa escola</h2>
+                <p>Esperamos por você e sua família!</p>
+            </div>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.205232790969!2d-405.18496772491548!3d-22.794857979334015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccc5b5dd8c625b%3A0x23422f804ad7f8d1!2sEscola%20de%20Educa%C3%A7%C3%A3o%20Infantil%20Baby%20Disney!5e0!3m2!1spt-BR!2sbr!4v1791982071882!5m2!1spt-BR!2sbr">
+                    title="Localização da Escola Baby Disney"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+        </section>
+
+        <!-- VENHA NOS CONHECER: ACIMA DO FOOTER -->
+        <section class="hero-contato">
+
+            <div class="hero-content">
+
+                <span class="hero-label">VENHA NOS CONHECER</span>
+
+                <h2>O próximo capítulo da infância começa aqui.</h2>
+
+                <p>
+                    Entre em contato e conheça de perto o ambiente preparado
+                    para acompanhar o desenvolvimento das crianças.
+                </p>
+
+                <a href="agendamento.html" class="hero-button">
+                    Agende uma visita
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- LOGO E DESCRIÇÃO -->
+            <div class="footer-brand">
+
+                <a href="index.html" aria-label="Baby Disney - início">
+                    <img src="../static/img/logo.png" alt="Logo da Escola Baby Disney">
+                </a>
+
+                <p>
+                    Educação infantil com acolhimento, experiências
+                    e oportunidades para aprender.
+                </p>
+
+            </div>
+
+            <!-- NAVEGAÇÃO -->
+            <div class="footer-links">
+
+                <h2>Navegação</h2>
+
+                <a href="index.html">Início</a>
+                <a href="espaco.html">Espaço</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="agendamento.html">Agendamento</a>
+                <a href="contato.html">Contato</a>
+
+            </div>
+
+            <!-- CONTATO -->
+            <div class="footer-contact">
+
+                <h2>Contato</h2>
+
+                <a href="tel:+5512988642417">
+                    (12) 98864-2417
+                </a>
+
+                <a href="mailto:Babydisney1999@gmail.com">
+                    Babydisney1999@gmail.com
+                </a>
+
+                <a href="https://www.instagram.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Instagram
+                </a>
+
+                <a href="https://wa.me/5512988642417"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- DIREITOS AUTORAIS -->
+        <div class="footer-bottom">
+            <p>
+                © 2026 Escola de Educação Infantil Baby Disney.
+                Todos os direitos reservados.
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

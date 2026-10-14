@@ -1,0 +1,1007 @@
+
+/* ==========================================
+   1. CONFIGURAÇÕES GERAIS
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 30px;
+}
+
+body {
+    font-family: "DM Sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #526b88;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* ==========================================
+   2. BARRA SUPERIOR
+========================================== */
+
+.topbar {
+    width: 100%;
+    background-color: #244d66;
+    color: #fff;
+}
+
+.topbar-container {
+    width: 100%;
+    max-width: 1500px;
+    min-height: 41px;
+    margin: 0 auto;
+    padding: 8px 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.topbar p,
+.topbar a {
+    margin: 0;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.topbar a {
+    position: relative;
+    padding-bottom: 3px;
+}
+
+/* Sublinhado animado da barra superior */
+
+.topbar a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #ffaaa3;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.topbar a:hover::after,
+.topbar a:focus-visible::after {
+    transform: scaleX(1);
+}
+
+
+/* ==========================================
+   3. CABEÇALHO
+========================================== */
+
+.header {
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #e8e2dc;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1500px;
+    min-height: 126px;
+    margin: 0 auto;
+    padding: 20px 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* Menu */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.nav-menu a {
+    position: relative;
+    padding: 10px 0;
+
+    color: #151515;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+
+    transition: color 0.3s ease;
+}
+
+/* Sublinhado animado do menu */
+
+.nav-menu a::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #ef7774;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus-visible,
+.nav-menu a.active {
+    color: #ef7774;
+}
+
+.nav-menu a:hover::after,
+.nav-menu a:focus-visible::after,
+.nav-menu a.active::after {
+    transform: scaleX(1);
+}
+
+
+/* Botão de agendamento */
+
+.header-button {
+    min-width: 180px;
+    padding: 14px 20px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    background-color: #244d66;
+    border: 1px solid #244d66;
+
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.header-button:hover {
+    background-color: #fff;
+    color: #244d66;
+}
+
+
+/* ==========================================
+   4. TÍTULOS DAS SEÇÕES
+========================================== */
+
+.section-heading,
+.map-heading {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.section-label {
+    display: block;
+    margin-bottom: 12px;
+
+    color: #e87875;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.section-heading h1,
+.section-heading h2,
+.map-heading h2 {
+    margin-bottom: 15px;
+
+    color: #244d66;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(30px, 3vw, 40px);
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+}
+
+.section-heading p,
+.map-heading p {
+    color: #657786;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* ==========================================
+   5. ÁREA PRINCIPAL DE CONTATO
+========================================== */
+
+/*
+   A seção ocupa a tela inteira.
+   O padding cria o espaço lateral.
+   O conteúdo interno fica centralizado.
+*/
+
+.contact-section {
+    width: 100%;
+    padding: 85px 30px;
+    background-color: #fff;
+}
+
+/* Área interna limitada e centralizada */
+
+.contact-section > .section-heading,
+.contact-section > .contact-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-section > .section-heading {
+    margin-bottom: 48px;
+}
+
+/* Informações e formulário */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 65px;
+    align-items: start;
+}
+
+
+/* ==========================================
+   6. INFORMAÇÕES DA ESCOLA
+========================================== */
+
+.contact-info {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.info-icon {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background-color: #f8e9e4;
+    color: #244d66;
+    font-size: 23px;
+}
+
+.info-card h2 {
+    margin: 0 0 8px;
+
+    color: #244d66;
+    font-family: "DM Sans", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.info-card p {
+    margin-bottom: 9px;
+
+    color: #667785;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.info-card strong {
+    color: #244d66;
+}
+
+.info-card a {
+    display: block;
+    margin-bottom: 6px;
+
+    color: #667785;
+    font-size: 13px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+
+    transition: color 0.2s ease;
+}
+
+.info-card a:hover {
+    color: #e87875;
+}
+
+.info-card a.info-link {
+    margin-top: 8px;
+    color: #244d66;
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   7. FORMULÁRIO
+========================================== */
+
+.contact-form-container {
+    width: 100%;
+    min-width: 0;
+    padding: 36px;
+
+    border: 1px solid #eee8e2;
+    background-color: #faf8f5;
+}
+
+.contact-form-container h2 {
+    margin-bottom: 10px;
+
+    color: #244d66;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.form-description {
+    margin-bottom: 27px;
+
+    color: #667785;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 19px;
+}
+
+.form-group label {
+    color: #244d66;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 14px;
+
+    border: 1px solid #dedbd6;
+    border-radius: 0;
+    outline: none;
+
+    background-color: #fff;
+    color: #244d66;
+
+    font-family: "DM Sans", Arial, sans-serif;
+    font-size: 13px;
+
+    transition: border-color 0.2s ease;
+}
+
+.form-group input,
+.form-group select {
+    min-height: 48px;
+}
+
+.form-group textarea {
+    min-height: 125px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #244d66;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9a9a9a;
+}
+
+.form-button {
+    width: 100%;
+    min-height: 52px;
+    padding: 14px 22px;
+
+    border: 1px solid #244d66;
+    background-color: #244d66;
+    color: #fff;
+
+    font-family: "DM Sans", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease;
+}
+
+.form-button:hover {
+    background-color: #fff;
+    color: #244d66;
+}
+
+.honeypot {
+    position: absolute;
+    left: -9999px;
+}
+
+
+/* ==========================================
+   8. MAPA
+========================================== */
+
+.map-section {
+    width: 100%;
+    padding: 70px 30px 85px;
+    background-color: #f8f6f2;
+}
+
+/* Centraliza título e mapa na mesma largura */
+
+.map-section > .map-heading,
+.map-section > .map-container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.map-heading {
+    margin-bottom: 32px;
+}
+
+.map-container {
+    height: 400px;
+    overflow: hidden;
+    background-color: #e8e5df;
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/* ==========================================
+   9. VENHA NOS CONHECER
+========================================== */
+
+.hero-contato {
+    width: 100%;
+    min-height: 540px;
+    padding: 85px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #244d66;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero-label {
+    display: block;
+    margin-bottom: 22px;
+
+    color: #ffaaa3;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero-content h2 {
+    max-width: 850px;
+    margin: 0 auto 22px;
+
+    color: #fff;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(36px, 3.6vw, 50px);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.7px;
+}
+
+.hero-content > p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+
+    color: #f1f4f6;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.9;
+}
+
+.hero-button {
+    min-height: 58px;
+    padding: 17px 29px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #fff;
+    color: #244d66;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.hero-button:hover {
+    background-color: #ffaaa3;
+    color: #244d66;
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   10. RODAPÉ
+========================================== */
+
+.footer {
+    width: 100%;
+    background-color: #f6f3ef;
+    color: #526b88;
+}
+
+/*
+   A largura máxima alinha o rodapé ao cabeçalho.
+   O padding mantém distância entre conteúdo e bordas.
+*/
+
+.footer-container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 60px 90px;
+    
+
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1.5fr);
+    gap: 50px;
+    align-items: start;
+}
+
+
+/* Logo e texto */
+
+.footer-brand {
+    min-width: 0;
+}
+
+.footer-brand img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.footer-brand p {
+    max-width: 390px;
+    color: #526b88;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+
+/* Títulos */
+
+.footer h2 {
+    margin-bottom: 10px;
+
+    color: #17456b;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.0;
+}
+
+
+/* Links */
+
+.footer-links,
+.footer-contact {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.footer-links a,
+.footer-contact a {
+    color: #526b88;
+    font-size: 12.7px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: #17456b;
+    text-decoration: underline;
+}
+
+
+/* Linha inferior */
+
+.footer-bottom {
+    width: 100%;
+    border-top: 1px solid #e4dfd8;
+    padding: 22px 30px;
+}
+
+.footer-bottom p {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    color: #526b88;
+    font-size: 12px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+/* ==========================================
+   11. TELAS MÉDIAS
+========================================== */
+
+@media (max-width: 1100px) {
+
+    .header-container {
+        gap: 22px;
+    }
+
+    .logo img {
+        width: 125px;
+    }
+
+    .nav-menu {
+        gap: 19px;
+    }
+
+    .nav-menu a {
+        font-size: 13px;
+    }
+
+    .header-button {
+        min-width: 155px;
+        padding: 13px 14px;
+    }
+
+    .contact-grid {
+        gap: 35px;
+    }
+
+    .contact-form-container {
+        padding: 28px;
+    }
+
+    .footer-container {
+        gap: 40px;
+    }
+}
+
+
+/* ==========================================
+   12. TABLETS E CELULARES
+========================================== */
+
+@media (max-width: 768px) {
+
+    /* Barra superior */
+
+    .topbar-container {
+        padding: 10px 20px;
+        flex-wrap: wrap;
+        gap: 5px 15px;
+    }
+
+    .topbar p,
+    .topbar a {
+        font-size: 12px;
+    }
+
+
+    /* Cabeçalho */
+
+    .header-container {
+        min-height: auto;
+        padding: 22px 20px;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo img {
+        width: 140px;
+    }
+
+    .nav-menu {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 20px;
+    }
+
+    .nav-menu a {
+        font-size: 13px;
+    }
+
+    .header-button {
+        width: 100%;
+        max-width: 240px;
+    }
+
+
+    /* Seção de contato */
+
+    .contact-section {
+        padding: 60px 22px;
+    }
+
+    .contact-section > .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h1,
+    .section-heading h2,
+    .map-heading h2 {
+        font-size: 30px;
+    }
+
+    .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 42px;
+    }
+
+    .contact-form-container {
+        padding: 25px 20px;
+    }
+
+    .contact-form-container h2 {
+        font-size: 26px;
+    }
+
+
+    /* Mapa */
+
+    .map-section {
+        padding: 55px 22px 65px;
+    }
+
+    .map-container {
+        height: 320px;
+    }
+
+
+    /* Chamada */
+
+    .hero-contato {
+        min-height: 450px;
+        padding: 70px 22px;
+    }
+
+    .hero-label {
+        margin-bottom: 19px;
+    }
+
+    .hero-content h2 {
+        font-size: clamp(32px, 7vw, 40px);
+        line-height: 1.25;
+        letter-spacing: -0.4px;
+    }
+
+    .hero-content > p {
+        font-size: 14px;
+    }
+
+    .hero-button {
+        min-height: 54px;
+        padding: 15px 24px;
+    }
+
+
+    /* Rodapé */
+
+    .footer-container {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 35px 25px;
+        padding: 42px 25px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-brand img {
+        width: 140px;
+        margin-bottom: 20px;
+    }
+
+    .footer h2 {
+        margin-bottom: 16px;
+    }
+
+    .footer-bottom {
+        padding: 18px 25px;
+    }
+}
+
+
+/* ==========================================
+   13. CELULARES PEQUENOS
+========================================== */
+
+@media (max-width: 480px) {
+
+    .topbar-container {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        gap: 8px 15px;
+    }
+
+    .nav-menu a {
+        font-size: 12px;
+    }
+
+    .section-heading h1,
+    .section-heading h2,
+    .map-heading h2 {
+        font-size: 28px;
+    }
+
+    .info-card {
+        gap: 13px;
+    }
+
+    .info-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 21px;
+    }
+
+    .contact-form-container {
+        padding: 23px 16px;
+    }
+
+    .map-container {
+        height: 270px;
+    }
+
+    .hero-contato {
+        min-height: 420px;
+        padding: 58px 18px;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .hero-content > p {
+        font-size: 13px;
+    }
+
+    .footer-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 32px;
+        padding: 38px 22px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-brand img {
+        width: 135px;
+    }
+
+    .footer-bottom {
+        padding: 18px 22px;
+    }
+
+    .footer-bottom p {
+        font-size: 11px;
+    }
+}
+
+
+/* ==========================================
+   14. ACESSIBILIDADE
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}

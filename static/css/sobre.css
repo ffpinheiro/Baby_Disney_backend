@@ -1,0 +1,635 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+:root {
+    --azul: #244C67;
+    --rosa: #D97878;
+    --creme: #FAF8F4;
+    --branco: #FFFFFF;
+    --texto: #30363B;
+    --texto-suave: #687078;
+    --borda: #E8E3DC;
+
+    --fonte-titulo: "Playfair Display", serif;
+    --fonte-texto: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fonte-texto);
+    color: var(--texto);
+    background-color: var(--branco);
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 100%;
+}
+
+
+/* =========================================
+   BARRA SUPERIOR
+========================================= */
+
+.topbar {
+    background-color: var(--azul);
+    color: var(--branco);
+    font-size: 12px;
+    letter-spacing: 0.3px;
+}
+
+.topbar-content {
+    min-height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.topbar-content span,
+.topbar-content a {
+    color: var(--branco);
+}
+
+.topbar-content a {
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+}
+
+.topbar-content a:hover {
+    opacity: 0.75;
+}
+
+
+/* =========================================
+   CABEÇALHO PRINCIPAL
+========================================= */
+
+.main-header {
+    background-color: var(--branco);
+    border-bottom: 1px solid var(--borda);
+}
+
+.header-content {
+    min-height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.logo-link {
+    flex-shrink: 0;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* NAVEGAÇÃO */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.main-nav a {
+    position: relative;
+    color: var(--texto);
+    font-size: 13px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+
+/* Sublinhado animado */
+
+.main-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--rosa);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--rosa);
+}
+
+.main-nav a:hover::after,
+.main-nav a.active::after {
+    transform: scaleX(1);
+}
+
+
+/* BOTÃO DO CABEÇALHO */
+
+.header-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 19px;
+
+    background-color: var(--branco);
+    color: var(--azul);
+
+    font-size: 12px;
+    font-weight: 600;
+
+    border: 1px solid var(--azul);
+    white-space: nowrap;
+
+    transition: all 0.25s ease;
+}
+
+.header-button:hover {
+    background-color: var(--azul);
+    color: var(--branco);
+}
+
+
+/* =========================================
+   INTRODUÇÃO DA PÁGINA
+========================================= */
+
+.about-intro {
+    padding: 100px 0 90px;
+    background-color: var(--creme);
+    text-align: center;
+}
+
+.section-label {
+    display: inline-block;
+    margin-bottom: 18px;
+
+    color: var(--rosa);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.about-intro h1 {
+    max-width: 850px;
+    margin: 0 auto 24px;
+
+    color: var(--azul);
+    font-family: var(--fonte-titulo);
+    font-size: clamp(38px, 5vw, 62px);
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.about-intro-text {
+    max-width: 650px;
+    margin: 0 auto;
+
+    color: var(--texto-suave);
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   SEÇÕES SOBRE A ESCOLA
+========================================= */
+
+.about-section {
+    padding: 65px 0;
+    background-color: var(--branco);
+}
+
+.about-section-soft {
+    background-color: var(--creme);
+}
+
+.about-card {
+    display: grid;
+    grid-template-columns: 110px minmax(0, 1fr);
+    gap: 35px;
+    align-items: start;
+
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 48px;
+
+    background-color: var(--branco);
+    border: 1px solid var(--borda);
+}
+
+.about-section-soft .about-card {
+    background-color: var(--branco);
+}
+
+.about-card-number {
+    color: var(--rosa);
+    font-family: var(--fonte-titulo);
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.about-card-content .section-label {
+    margin-bottom: 12px;
+}
+
+.about-card h2 {
+    margin-bottom: 22px;
+
+    color: var(--azul);
+    font-family: var(--fonte-titulo);
+    font-size: clamp(30px, 3vw, 42px);
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.about-card p {
+    margin: 0;
+
+    color: var(--texto-suave);
+    font-size: 16px;
+    line-height: 2;
+}
+
+
+/* =========================================
+   CHAMADA FINAL — VENHA NOS CONHECER
+========================================= */
+
+.about-cta {
+    width: 100%;
+    min-height: 580px;
+    padding: 100px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--azul);
+    color: var(--branco);
+    text-align: center;
+}
+
+.about-cta-content {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.about-cta-label {
+    display: block;
+    margin-bottom: 28px;
+
+    color: #F3A6A0;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.about-cta h2 {
+    max-width: 850px;
+    margin: 0 auto 28px;
+
+    color: var(--branco);
+    font-family: var(--fonte-titulo);
+    font-size: clamp(36px, 4.2vw, 62px);
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.about-cta p {
+    max-width: 750px;
+    margin: 0 auto 36px;
+
+    color: var(--branco);
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.about-cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 64px;
+    padding: 18px 30px;
+
+    border: 1px solid var(--branco);
+    border-radius: 3px;
+
+    background-color: var(--branco);
+    color: var(--azul);
+
+    font-size: 16px;
+    font-weight: 700;
+
+    transition: all 0.25s ease;
+}
+
+.about-cta-button:hover {
+    background-color: transparent;
+    color: var(--branco);
+}
+
+
+/* =========================================
+   RODAPÉ
+========================================= */
+
+
+.footer {
+    padding-top: 75px;
+    background-color: #F6F3EE;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.55fr 0.75fr 1.15fr;
+    column-gap: 100px;
+    align-items: start;
+    padding-bottom: 65px;
+}
+
+.footer-brand {
+    padding-top: 25px;
+}
+
+.footer-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 34px;
+    object-fit: contain;
+}
+
+.footer-brand p {
+    max-width: 360px;
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.footer-column h3 {
+    margin-bottom: 9px;
+    color: var(--azul-escuro);
+    font-family: var(--fonte-texto);
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.footer-column a {
+    color: var(--texto-suave);
+    font-size: 0.82rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+    transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+    color: var(--coral-escuro);
+}
+
+.footer-bottom {
+    border-top: 1px solid #E7E1DA;
+    padding: 23px 0 18px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: var(--texto-suave);
+    font-size: 0.75rem;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* =========================================
+   RESPONSIVIDADE — TABLETS
+========================================= */
+
+@media (max-width: 992px) {
+
+    .header-content {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .main-nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .about-card {
+        grid-template-columns: 75px minmax(0, 1fr);
+        gap: 25px;
+        padding: 35px;
+    }
+
+    .footer-content {
+        gap: 35px;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVIDADE — CELULARES
+========================================= */
+
+@media (max-width: 768px) {
+
+    .topbar-content {
+        padding-top: 9px;
+        padding-bottom: 9px;
+        font-size: 10px;
+    }
+
+    .header-content {
+        gap: 15px;
+    }
+
+    .logo {
+        width: 115px;
+    }
+
+    .header-button {
+        padding: 10px 12px;
+        font-size: 10px;
+    }
+
+    .main-nav {
+        gap: 12px 18px;
+    }
+
+    .main-nav a {
+        font-size: 12px;
+    }
+
+    .about-intro {
+        padding: 75px 0 65px;
+    }
+
+    .about-intro-text {
+        padding: 0 10px;
+        font-size: 15px;
+    }
+
+    .about-section {
+        padding: 35px 0;
+    }
+
+    .about-card {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 30px 24px;
+    }
+
+    .about-card-number {
+        font-size: 36px;
+    }
+
+    .about-card p {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .about-cta {
+        min-height: 500px;
+        padding: 80px 22px;
+    }
+
+    .about-cta-label {
+        font-size: 12px;
+    }
+
+    .about-cta p {
+        font-size: 16px;
+    }
+
+    .about-cta-button {
+        min-height: 58px;
+        padding: 16px 22px;
+        font-size: 14px;
+    }
+
+    .main-footer {
+        padding-top: 45px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVIDADE — CELULARES PEQUENOS
+========================================= */
+
+@media (max-width: 480px) {
+
+    .topbar-content {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .header-content {
+        justify-content: center;
+    }
+
+    .logo-link {
+        margin-right: auto;
+    }
+
+    .main-nav {
+        gap: 12px 15px;
+    }
+
+    .about-intro {
+        padding: 60px 0 55px;
+    }
+
+    .about-intro h1 {
+        font-size: 36px;
+    }
+
+    .about-card {
+        padding: 25px 20px;
+    }
+
+    .about-card h2 {
+        font-size: 30px;
+    }
+
+    .about-cta {
+        min-height: 450px;
+        padding: 65px 18px;
+    }
+
+    .about-cta h2 {
+        font-size: 36px;
+    }
+
+    .about-cta p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .about-cta-button {
+        padding: 15px 18px;
+        font-size: 13px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+}
