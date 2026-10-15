@@ -52,15 +52,15 @@ python -m pytest testes/
 ## Dupla A: Cifra própria (Integrantes 2 e 3)
 
 **Código**
-- [ ] Definir as regras da cifra própria e como a chave funciona e é validada
+- [ x] Definir as regras da cifra própria e como a chave funciona e é validada
 - [ ] Acordar com a Dupla B a interface dos módulos de cifra (entradas, saídas e erros) antes de implementar
 - [ ] Implementar a cifra própria em `criptografia/`, com código comentado
 
 **Texto**
-- [ ] Revisão Teórica (dividida entre os dois, conforme o combinado)
-- [ ] Desenvolvimento do módulo criptográfico: conceito, motivação, regras, chave, criptografia e descriptografia, com fluxograma ou pseudocódigo
-- [ ] Exemplos práticos e limitações da cifra
-- [ ] Reunir as referências da parte teórica
+- [x ] Revisão Teórica (dividida entre os dois, conforme o combinado)
+- [x ] Desenvolvimento do módulo criptográfico: conceito, motivação, regras, chave, criptografia e descriptografia, com fluxograma ou pseudocódigo
+- [x ] Exemplos práticos e limitações da cifra
+- [x ] Reunir as referências da parte teórica
 
 ## Dupla B: Sistema e back-end (Integrantes 1 e 4)
 
