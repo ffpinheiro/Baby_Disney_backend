@@ -120,7 +120,7 @@
                         Agendamento
                     </h2>
 
-                    <form id="agendamentoForm" class="formulario-custom">
+                    <form id="agendamentoForm" class="formulario-custom" action="/criptografia" method="POST">
 
                         <div class="mb-3">
                             <label
@@ -167,6 +167,7 @@
                             <input
                                 type="date"
                                 id="nascimento"
+                                name="nascimento"
                                 class="form-control"
                                 required
                             >
@@ -199,6 +200,7 @@
 
                             <select
                                 id="horario"
+                                name="horario"
                                 class="form-select"
                                 required
                             >
@@ -301,8 +303,7 @@
 
                         <!-- BOTÃO DE AGENDAMENTO -->
                         <button
-                            type="button"
-                            onclick="enviarFormulario()"
+                            type="submit"
                             class="btn btn-danger w-100 btn-lg"
                         >
                             Agendar
